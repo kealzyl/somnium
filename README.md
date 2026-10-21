@@ -42,14 +42,40 @@ python kealzyl_somnium_dream.py --input input.jpg --layer block3 --intensity 1.0
 
 ## Examples:
 #### Place the **kealzyl_somnium_weights.pth** file from the **/kealzyl_somnium_model** folder in the root or download from [here](https://huggingface.co/Kealzyl/somnium/blob/main/kealzyl_somnium_model/kealzyl_somnium_weights.pth). <br><br>
+## 1. For Images
 
-1. For images <br><br>
-<img width="200" src="images/input.jpg" alt="logo"><br>
-Run:
-```python
-python kealzyl_somnium_dream.py --input input.jpg --layer block3 --intensity 1.0  --steps 60 --octaves 4 --max-side 768 --model kealzyl_somnium_weights.pth
+**Input image:**
+
+<img width="200" src="images/input.jpg" alt="Input image">
+
+**Run:**
+
+```bash
+python kealzyl_somnium_dream.py --input input.jpg --output somnium_dream.png --layer block3 --intensity 1.0 --steps 60 --octaves 4 --max-side 768 --model kealzyl_somnium_weights.pth
 ```
-And it outputted : <br>
-<img width="200" src="images/somnium_dream.png" alt="logo"><br><br>
 
-2. For videos <br><br>
+**Output image:**
+
+
+<img width="200" src="images/somnium_dream.png" alt="Kealzyl Somnium dream output">
+
+
+
+## 2. For Videos
+
+**Run (basic):**
+```bash
+python kealzyl_somnium_video.py --input clip.mp4 --output dream.mp4 --model kealzyl_somnium_weights.pth
+```
+
+**Run (stronger dream effect):**
+```bash
+python kealzyl_somnium_video.py --input clip.mp4 --output dream.mp4 --intensity 1.5 --steps 30 --layer block3 --model kealzyl_somnium_weights.pth
+```
+
+**Run (for weaker PCs):**
+```bash
+python kealzyl_somnium_video.py --input clip.mp4 --output dream.mp4 --intensity 1.0 --steps 10 --layer block3 --model kealzyl_somnium_weights.pth
+```
+
+
