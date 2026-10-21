@@ -9,6 +9,7 @@
 <br>
 
 # Setup :
+### **!!!   If you don't want to train, but try the model, you can find the weights [here](https://huggingface.co/Kealzyl/somnium/blob/main/kealzyl_somnium_model/kealzyl_somnium_weights.pth)   !!!** <br><br>
 
 1. Install libraries :
 ```pip
