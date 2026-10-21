@@ -13,7 +13,7 @@
 
 1. Install libraries :
 ```pip
-pip install torch torchvision pillow
+pip install torch torchvision pillow opencv-python
 ```
 2. Download and extract the zip
 
