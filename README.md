@@ -41,12 +41,15 @@ python kealzyl_somnium_dream.py --input input.jpg --layer block3 --intensity 1.0
 ```
 
 ## Examples:
+#### Place the **kealzyl_somnium_weights.pth** file from the **/kealzyl_somnium_model** folder in the root or download from [here](https://huggingface.co/Kealzyl/somnium/blob/main/kealzyl_somnium_model/kealzyl_somnium_weights.pth). <br><br>
+
+1. For images <br><br>
 <img width="200" src="images/input.jpg" alt="logo"><br>
-Ran:
+Run:
 ```python
-python kealzyl_somnium_dream.py --input input.jpg --layer block3 --intensity 1.0  --steps 60 --octaves 4 --max-side 768
+python kealzyl_somnium_dream.py --input input.jpg --layer block3 --intensity 1.0  --steps 60 --octaves 4 --max-side 768 --model kealzyl_somnium_weights.pth
 ```
 And it outputted : <br>
 <img width="200" src="images/somnium_dream.png" alt="logo"><br><br>
 
-### # Pretrained models can be found [here](https://huggingface.co/Kealzyl/somnium/tree/main/kealzyl_somnium_model).
+2. For videos <br><br>
